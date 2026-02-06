@@ -1,0 +1,33 @@
+# Node.js / npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables (VERY IMPORTANT!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# React / Create React App
+client/build/
+client/.env
+client/.DS_Store
+
+# Logs and temp files
+*.log
+*.log.*
+.temp/
+coverage/
+.nyc_output/
+
+# Editor / OS files
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Optional: ignore dist folders if you add backend build later
+dist/
