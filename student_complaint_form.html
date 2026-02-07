@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeakUp | Student Complaint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            color: #0f172a;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            background-color: #0f172a;
+            padding: 14px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar .logo {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #dbeafe;
+            font-size: 15px;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffffff;
+        }
+
+        /* ===== MAIN CONTAINER ===== */
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        /* ===== COMPLAINT CARD ===== */
+        .complaint-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 650px;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .complaint-card h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+
+        .complaint-card p {
+            text-align: center;
+            color: #2563eb;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        /* ===== FORM ===== */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .form-group select,
+        .form-group textarea,
+        .form-group input {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 110px;
+        }
+
+        .form-group input[type="file"] {
+            padding: 6px;
+        }
+
+        /* ===== SUBMIT BUTTON ===== */
+        .submit-btn {
+            width: 100%;
+            margin-top: 15px;
+            padding: 14px;
+            background-color: #22c55e;
+            border: none;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #16a34a;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .navbar ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <div class="navbar">
+        <div class="logo">SpeakUp</div>
+        <ul>
+            <li><a href="#">Complaint Form</a></li>
+            <li><a href="#">My Complaints</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="container">
+        <div class="complaint-card">
+
+            <h2>Submit a Complaint</h2>
+            <p>Report digital harassment safely and confidentially.</p>
+
+            <form>
+                <div class="form-group">
+                    <label>Complaint Type</label>
+                    <select>
+                        <option>Select Complaint Type</option>
+                        <option>Cyberbullying</option>
+                        <option>Fake Account</option>
+                        <option>Threats</option>
+                        <option>Harassment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Platform</label>
+                    <select>
+                        <option>Select Platform</option>
+                        <option>Facebook</option>
+                        <option>Instagram</option>
+                        <option>WhatsApp</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea placeholder="Describe the issue..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Evidence Upload (Optional)</label>
+                    <input type="file">
+                </div>
+
+                <button class="submit-btn">Submit Complaint</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Complaints | SpeakUp</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f5f7fb;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #0f172a;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 25px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* PAGE HEADER */
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .page-title {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        /* COMPLAINT CARD */
+        details {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .complaint-info h3 {
+            margin: 0;
+            color: #1e3a8a;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* STATUS BADGES */
+        .status {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: white;
+        }
+
+        .submitted {
+            background-color: #2563eb;
+        }
+
+        .reviewed {
+            background-color: #22c55e;
+        }
+
+        .action {
+            background-color: #f97316;
+        }
+
+        /* EXPANDED CONTENT */
+        .details-content {
+            margin-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 15px;
+        }
+
+        .details-content p {
+            margin: 8px 0;
+            color: #334155;
+        }
+
+        .details-content a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .details-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #0f172a;
+            color: #cbd5f5;
+            text-align: center;
+            padding: 15px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>SpeakUp</h2>
+    <div class="nav-links">
+        <a href="#">Complaint Form</a>
+        <a href="#"><b>My Complaints</b></a>
+        <a href="#">Profile</a>
+        <a href="#">Feedback</a>
+        <a href="#">Logout</a>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <h1 class="page-title">My Complaints</h1>
+    <p class="subtitle">Track the status of your reported digital harassment cases.</p>
+
+    <!-- COMPLAINT 1 -->
+    <details open>
+        <summary>
+            <div class="complaint-info">
+                <h3>Fake Account</h3>
+                <div class="meta">Twitter • 24/04/2024</div>
+            </div>
+            <span class="status submitted">Submitted</span>
+        </summary>
+
+        <div class="details-content">
+            <p><strong>Description:</strong> A fake account is using my name and pictures to impersonate me.</p>
+            <p><strong>Evidence:</strong> <a href="#">screenshot123.jpg</a></p>
+            <p><strong>Admin Response:</strong> No response yet.</p>
+        </div>
+    </details>
+
+    <!-- COMPLAINT 2 -->
+    <details>
+        <summary>
+            <div class="complaint-info">
+                <h3>Cyberbullying</h3>
+                <div class="meta">Instagram • 22/04/2024</div>
+            </div>
+            <span class="status reviewed">Reviewed</span>
+        </summary>
+
+        <div class="details-content">
+            <p><strong>Description:</strong> Repeated abusive comments on my posts.</p>
+            <p><strong>Admin Response:</strong> Complaint is under investigation.</p>
+        </div>
+    </details>
+
+    <!-- COMPLAINT 3 -->
+    <details>
+        <summary>
+            <div class="complaint-info">
+                <h3>Harassment</h3>
+                <div class="meta">Facebook • 20/04/2024</div>
+            </div>
+            <span class="status action">Action Required</span>
+        </summary>
+
+        <div class="details-content">
+            <p><strong>Description:</strong> Threatening messages received.</p>
+            <p><strong>Admin Response:</strong> Please upload more evidence.</p>
+        </div>
+    </details>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    University Name • Academic Project • Privacy & Ethics
+</footer>
+
+</body>
+</html>

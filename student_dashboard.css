@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+}
+
+/* 🔝 NAVBAR */
+.navbar {
+    background-color: #1f2937;
+    color: white;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    color: #ffb4b4;
+    font-weight: bold;
+}
+
+/* 📝 FORM CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.complaint-card {
+    background: white;
+    width: 420px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.complaint-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FORM ELEMENTS */
+label {
+    font-size: 14px;
+    margin-top: 12px;
+    display: block;
+}
+
+select, textarea, input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.status {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #16a34a;
+}
