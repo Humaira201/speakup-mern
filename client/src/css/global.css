@@ -183,7 +183,10 @@ footer {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+body {
+  height: 100%;
+  margin: 0;
+}
 /* Full-screen gradient for auth pages (signup, login, etc.) */
 /* body.auth-page {
   background: linear-gradient(120deg, var(--navy), var(--royal)); 
@@ -192,6 +195,14 @@ footer {
   justify-content: center;
   align-items: center;
 } */
+ #root {
+  min-height: 100vh;           /* at least full screen height */
+  display: flex;
+  flex-direction: column;      /* stack children vertically */
+}
+main {
+  flex: 1 0 auto;              /* this pushes footer down */
+}
 
 .navbar {
   width: 100%;
@@ -247,4 +258,13 @@ footer {
     flex-direction: column;
     gap: 15px;
   }
+}
+footer {
+  flex-shrink: 0;              /* don't let footer shrink */
+  width: 100%;
+  background: var(--navy);
+  color: var(--text-light);
+  padding: 35px;
+  text-align: center;
+  font-size: 14px;
 }
