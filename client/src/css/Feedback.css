@@ -1,0 +1,145 @@
+/* :root {
+    --navy: #0f172a;
+    --royal: #1e3a8a;
+    --indigo: #2563eb;
+    --sky: #dbeafe;
+    --emerald: #22c55e;
+    --emerald-dark: #16a34a;
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --muted: #f1f5f9;
+    --border: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}*/
+
+.page{
+  background: var(--bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* NAVBAR */
+/* .navbar {
+    background: linear-gradient(135deg, var(--navy), var(--royal));
+    padding: 18px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-actions button {
+    margin-left: 12px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.feedback-btn {
+    background: var(--sky);
+    color: var(--royal);
+}
+
+.logout-btn {
+    background: #ef4444;
+    color: white;
+} */
+
+/* MAIN */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+/* CARD */
+.card {
+    background: var(--card);
+    width: 440px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    text-align: center;
+    color: var(--royal);
+    margin-bottom: 8px;
+}
+
+.card p {
+    text-align: center;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background: var(--muted);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--indigo);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+button.submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--emerald), var(--emerald-dark));
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+button.submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(34, 197, 94, 0.35);
+}

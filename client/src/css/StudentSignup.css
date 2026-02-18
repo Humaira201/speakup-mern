@@ -1,0 +1,121 @@
+/* :root{
+  --navy:#0f172a;
+  --royal:#1e3a8a;
+  --indigo:#2563eb;
+  --sky:#dbeafe;
+  --green:#22c55e;
+  --green-dark:#16a34a;
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --muted:#f1f5f9;
+  --text-main:#1f2933;
+  --text-sub:#475569;
+} 
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}*/
+
+.auth-page{
+  background: linear-gradient(120deg, var(--navy), var(--royal));
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ================= CARD ================= */
+.signup-card{
+  background:var(--card);
+  width:420px;
+  padding:40px;
+  border-radius:22px;
+  box-shadow:0 40px 80px rgba(0,0,0,0.35);
+}
+
+.signup-card h2{
+  text-align:center;
+  color:var(--royal);
+  margin-bottom:8px;
+}
+
+.signup-card p{
+  text-align:center;
+  font-size:14px;
+  color:var(--text-sub);
+  margin-bottom:30px;
+}
+
+/* ================= FORM ================= */
+label{
+  font-size:13px;
+  font-weight:500;
+  color:var(--text-main);
+  display:block;
+  margin-bottom:6px;
+}
+
+input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #cbd5e1;
+  margin-bottom:18px;
+  outline:none;
+  transition:0.3s;
+}
+
+input:focus{
+  border-color:var(--indigo);
+  box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* ================= OPTIONAL FIELD ================= */
+.optional{
+  background:var(--muted);
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:22px;
+}
+
+.optional span{
+  font-size:12px;
+  color:var(--text-sub);
+}
+
+/* ================= BUTTON ================= */
+.signup-btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:var(--green);
+  color:#022c22;
+  font-weight:600;
+  font-size:15px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.signup-btn:hover{
+  background:var(--green-dark);
+  transform:translateY(-2px);
+  box-shadow:0 15px 30px rgba(34,197,94,0.35);
+}
+
+/* ================= FOOTER TEXT ================= */
+.footer-text{
+  text-align:center;
+  margin-top:18px;
+  font-size:13px;
+  color:var(--text-sub);
+}
+
+.footer-text a{
+  color:var(--indigo);
+  text-decoration:none;
+  font-weight:500;
+}

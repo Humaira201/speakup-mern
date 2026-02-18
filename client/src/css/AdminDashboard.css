@@ -1,0 +1,188 @@
+/* :root {
+    --navy:#0f172a;
+    --royal:#1e3a8a;
+    --indigo:#2563eb;
+    --sky:#dbeafe;
+    --emerald:#22c55e;
+    --emerald-dark:#16a34a;
+    --bg:#f5f7fb;
+    --card:#ffffff;
+    --muted:#f1f5f9;
+    --text-main:#1f2933;
+    --text-sub:#475569;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}*/
+.page{
+  background: var(--bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ================= NAVBAR ================= */
+/* .navbar{
+    background:linear-gradient(135deg,var(--navy),var(--royal));
+    padding:18px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+.nav-left{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:0.4px;
+}
+
+.nav-right{
+    display:flex;
+    gap:15px;
+}
+
+.nav-right button{
+    padding:8px 18px;
+    border-radius:20px;
+    border:none;
+    font-size:13px;
+    font-weight:500;
+    cursor:pointer;
+    transition:0.3s;
+} */
+
+.feedback-btn{
+    background:transparent;
+    border:1px solid var(--sky);
+    color:var(--sky);
+}
+
+.feedback-btn:hover{
+    background:rgba(255,255,255,0.15);
+}
+
+.logout-btn{
+    background:var(--emerald);
+    color:#022c22;
+}
+
+.logout-btn:hover{
+    background:var(--emerald-dark);
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard{
+    padding:45px 70px;
+}
+
+.main{
+    display:flex;
+    gap:32px;
+}
+
+/* ================= PANELS ================= */
+.panel{
+    background:var(--card);
+    padding:28px;
+    border-radius:16px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.07);
+}
+
+.left{width:38%;}
+.right{width:62%;}
+
+h3{
+    color:var(--royal);
+    margin-bottom:18px;
+}
+
+/* ================= FILTER ================= */
+.filter{
+    display:flex;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.filter select{
+    background:var(--muted);
+    border:1px solid #e2e8f0;
+    font-size:13px;
+    padding:8px 10px;
+    border-radius:8px;
+}
+
+/* ================= COMPLAINT CARD ================= */
+.complaint{
+    background:var(--muted);
+    padding:16px;
+    border-left:5px solid #cbd5e1;
+    border-radius:10px;
+    margin-bottom:14px;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.complaint:hover{
+    background:var(--sky);
+    transform:translateY(-2px);
+}
+
+.complaint.active{
+    border-left-color:var(--indigo);
+    background:var(--sky);
+}
+
+/* ================= DETAILS ================= */
+.details-box{
+    background:var(--muted);
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:18px;
+    border-left:4px solid var(--indigo);
+}
+
+select, textarea{
+    width:100%;
+    background:var(--muted);
+    border-radius:8px;
+    border:1px solid #e2e8f0;
+    margin-top:8px;
+    padding:10px;
+}
+
+textarea{
+    resize:none;
+    height:90px;
+}
+
+/* ================= BUTTON ================= */
+.update-btn{
+    width:100%;
+    margin-top:16px;
+    background:var(--emerald);
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    padding:12px;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.update-btn:hover{
+    background:var(--emerald-dark);
+    transform:translateY(-1px);
+}
+
+/* ================= EMPTY ================= */
+.empty{
+    text-align:center;
+    color:#64748b;
+    padding:60px 10px;
+    font-size:15px;
+}

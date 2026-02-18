@@ -1,0 +1,250 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2ec4b6;
+}
+
+.hero {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 60px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: fadeUp 1s ease;
+}
+
+.hero-card h1 {
+    font-size: 52px;
+    color: #2ec4b6;
+}
+
+.hero-card h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #2ec4b6;
+    color: #000;
+}
+
+.primary:hover {
+    background: #28b3a6;
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.secondary:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-3px);
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 80px 8%;
+    background: #ffffff;
+    color: #333;
+}
+
+.feature {
+    background: #f9f9f9;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+}
+
+.feature span {
+    font-size: 40px;
+}
+
+.about {
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2ec4b6;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+footer {
+    background: #0f2027;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+/* src/css/global.css - common styles for all pages */
+:root {
+  --navy: #0f172a;
+  --royal: #1e3a8a;
+  --indigo: #2563eb;
+  --sky: #dbeafe;
+  --green: #22c55e;
+  --green-dark: #16a34a;
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #f1f5f9;
+  --text-main: #1f2933;
+  --text-sub: #475569;
+  --text-light: #cbd5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Full-screen gradient for auth pages (signup, login, etc.) */
+/* body.auth-page {
+  background: linear-gradient(120deg, var(--navy), var(--royal)); 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(135deg, var(--navy), var(--royal));
+  padding: 18px 5%;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Logo */
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+/* Nav links container */
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.navbar .nav-links a,
+.navbar .nav-links button {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links button:hover {
+  color: var(--sky);
+  transform: translateY(-2px);
+}
+
+/* Responsive - mobile menu if needed */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

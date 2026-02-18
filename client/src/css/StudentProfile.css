@@ -1,0 +1,162 @@
+/* :root {
+    --navy: #0f172a;
+    --royal: #1e3a8a;
+    --indigo: #2563eb;
+    --sky: #dbeafe;
+    --emerald: #22c55e;
+    --emerald-dark: #16a34a;
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --muted: #f1f5f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}*/
+
+.page{
+  background: var(--bg);
+  color: var(--text-main);
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* NAVBAR */
+/* .navbar {
+    background: linear-gradient(135deg, var(--navy), var(--royal));
+    color: white;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* BRAND */
+.brand {
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* NAV LINKS */
+/* .nav-links {
+    display: flex;
+    gap: 26px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: var(--emerald);
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+} */
+
+/* PAGE CONTAINER */
+.container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PROFILE CARD */
+.profile-card {
+    background: var(--card);
+    width: 420px;
+    border-radius: 18px;
+    padding: 35px 30px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* AVATAR */
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: var(--sky);
+    color: var(--royal);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 auto 15px;
+}
+
+/* NAME */
+.profile-card h2 {
+    color: var(--royal);
+    margin-bottom: 5px;
+}
+
+/* ROLE */
+.role {
+    font-size: 13px;
+    color: var(--indigo);
+    margin-bottom: 25px;
+}
+
+/* INFO ROW */
+.info {
+    background: var(--muted);
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.info span:first-child {
+    color: #64748b;
+}
+
+/* CTA */
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 12px;
+    background: var(--emerald);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: var(--emerald-dark);
+    transform: translateY(-1px);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #64748b;
+}
